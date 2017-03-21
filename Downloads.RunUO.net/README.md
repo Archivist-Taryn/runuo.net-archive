@@ -7,9 +7,9 @@
 
 ----------
 
- > **Index of . /**
+ **Index of . /**
 
-> | File | Downloads | Size | Modified | Description |
+| File | Downloads | Size | Modified | Description |
 | ---- |  ---- |  ---- |  ---- |  ---- |
 |  CenterED |   | 2.7 MB | 2016-May-07 | 0 Files - 22 Folders |
 |  Clients |   | 1.2 GB | 2016-May-09 |  
