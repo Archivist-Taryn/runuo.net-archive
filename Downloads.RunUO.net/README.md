@@ -1,8 +1,8 @@
 # RunUO.net Downloads #
 
-**Archived: ** Friday, March 17, 2017 2:40 AM Coordinated Universal Time (UTC)
+**Archived:** Friday, March 17, 2017 2:40 AM Coordinated Universal Time (UTC)
 
- **Index of . /**
+**Index of . /**
 
 | File | Downloads | Size | Modified | Description |
 | ---- |  ---- |  ---- |  ---- |  ---- |
