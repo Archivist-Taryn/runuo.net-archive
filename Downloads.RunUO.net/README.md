@@ -24,7 +24,7 @@
 | Ultima | |204.5 MB |2016-May-09 | |
 | Unsortiert | |52.9 MB |2016-May-09 | |
 | UOArchitect | |194.1 MB |2016-May-13 | |
-| UOFiddler | |4.7 MB |2016-May-07 | |
+| [UOFiddler](../Downloads.RunUO.net/UOFiddler/) | |4.7 MB |2016-May-07 | 2 Files - 0 Folders |
 | UOLandscaper | |2.0 MB |2016-May-07 | |
 | WorldMaker | |4.3 MB |2016-May-07 | |
 | XMLSpawner | |8.1 MB |2016-May-13 | |
