@@ -6,7 +6,7 @@
 
 | File |Downloads |Size |Modified |Description |
 | ---- |  ---- |  ---- |  ---- |  ---- |
-| CenterED | |2.7 MB |2016-May-07 | |
+| [CenterED](../Downloads.RunUO.net/CenterED/) | |2.7 MB |2016-May-07 | 3 Files - 0 Folders |
 | Clients | |1.2 GB |2016-May-09 | |
 | Emulator | |432.3 MB |2016-May-13 | |
 | Fonts | |100.2 KB |2016-May-09 | |
