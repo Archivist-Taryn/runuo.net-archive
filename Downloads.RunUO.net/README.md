@@ -10,7 +10,7 @@
 | Clients | |1.2 GB |2016-May-09 | |
 | Emulator | |432.3 MB |2016-May-13 | |
 | [Fonts](../Downloads.RunUO.net/Fonts/) | |100.2 KB |2016-May-09 | 2 Files - 0 Folders |
-| GumpStudio | |300.2 KB |2016-May-07 | |
+| [GumpStudio](../Downloads.RunUO.net/GumpStudio/) | |300.2 KB |2016-May-07 | 1 Files - 0 Folders |
 | InsideUO | |389.7 KB |2016-May-07 | |
 | Mul | |2.5 MB |2016-May-07 | |
 | Music | |38.9 MB |2016-May-09 | |
