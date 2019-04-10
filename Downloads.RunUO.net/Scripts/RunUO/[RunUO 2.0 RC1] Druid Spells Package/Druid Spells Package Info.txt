@@ -1,0 +1,14 @@
+[RunUO 2.0 RC1] Druid Spells Package
+
+Here is a 2.0 compliant release of the Druid Spell System.
+If i remember correctly this spell system was orginally release by Voran
+the package i updated includes some player level commands and a vendor and reg stone and cloak. i am unsure of the original creators of these sub scripts but if i remember correctly the package i updated was last worked by darknesspr so all credit goes to those two and the original creators of the scripts, as well as to those that helped me with my spellbook issue.
+
+
+to install simply replace distro files with those in the file marked modified distro and place all others in your custom scripts directory. if you have files that are already modified please merge the changes. 
+
+
+IF YOU HAVE RUNUO 1.0 AND WANT DRUID SPELLS RUN A SEARCH AND DL ANOTHER PACKAGE FROM THE ARCHIVES.
+
+
+NOTE: This package was updated with a revision 66 core. use as you see fit. 

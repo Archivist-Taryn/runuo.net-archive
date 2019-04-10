@@ -1,0 +1,60 @@
+I got the idea of this system from over at this thread.
+http://runuo.com/community/threads/lifestone-system.482855/
+
+I decided I actually liked the idea, sorta. And decided to implement it in a way that I would like, on a shard I'm working on.
+
+Here's how the system works:
+
+Life Stones are items that a player must carry in their pack (it doesn't need to be blessed.) Life Stones can be linked to any Ankh in game. They are linked two ways.
+
+1. Double click a stone that doesn't have an Ankh set.
+2. Click the stone once for a context menu that lets you set/reset an Ankh.
+
+After a player links their Life Stone to an Ankh, they will be prompted on death if they would like to teleport to their linked location. They don't have to teleport if they don't wish to, it is optional.
+
+Each stone has an amount of uses (default is random between 25-50) and uses decrease each time you decide to teleport to your linked location.
+
+*Note*
+Teleporting follows all basic rules of teleporting. It will not let a Red sneak into Tram, and also won't work if you're carrying a Sigil.
+
+*Side Note*
+If you wish to make this work with an older version of RunUO, other than the usual edits need such as the Command Register edit. I have a comment on the gump code on how to remove TerMur as a map check on travel.
+
+Also each stone has additional settings, that will prevent the stone from working if you're located in a dungeon region. Also a setting that will let your pets teleport with you, plus a setting that lets your corpse teleport with you.
+
+I have included 3 bonus deeds that can be used on the Life Stones to enable each of the 3 settings. You may make them craftable, sell them, market as a donation item, or not even use them.
+
+You may configure the system by typing one of the following commands.
+[lifestoneconfig
+[lsconfig
+
+The settings that it displays are mostly settings that will effect how a Life Stone behaves when it's created, it will not effect existing Life Stones in the game.
+
+If anyone else has any other ideas for this system, I'm all ears. I'd also like some possitive/negative feedback if you have any. =P
+
+-----------------------------------
+Installation
+
+1. Drop the "Life Stone System" folder into your Customs directory.
+2. Find the following line in your PlayerMobile.cs file
+
+
+Code:
+base.OnDeath(c);
+Directly under that, place this bit of code.
+
+
+Code:
+#region Life Stone Edit Begin
+            for (int i = 0; i < LifeStoneCore.LifeStoneList.Count; i++)
+            {
+                if (LifeStoneCore.LifeStoneList[i].LifeStoneOwner == this)
+                {
+                    if (LifeStoneCore.LifeStoneList[i].Stone.UsesRemaining > 0)
+                    {
+                        this.SendGump(new LifeStoneReturnGump(this, LifeStoneCore.LifeStoneList[i].Stone));
+                    }
+                }
+            }
+            #endregion Life Stone Edit End
+3. Restart your shard and use [LSConfig or [LifeStoneConfig to set it up, then issue your stones how ever you want. 

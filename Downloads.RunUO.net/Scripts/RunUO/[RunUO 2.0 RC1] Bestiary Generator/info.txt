@@ -1,0 +1,50 @@
+[RunUO 2.0 RC1] Bestiary Generator.
+
+RunUO Bestiary Generator
+written by arul, latest update: 27.5.07
+
+Summary:
+System that generates comprehensive set of web pages containing every single piece of information about mobiles with all theirs stats, skills and properties. Integrated and a lilttle bit enhanced example of this system can be found here.
+
+Installation:
+Extract the archive's contents into your RunUO root directory.
+You may also need to add Ultima.dll to your ./data/Assemblies.cfg file.
+Once your server successfully start, check your /Bestiary/ directory for index.html
+
+Configuration:
+There's a data.xml file located in the ./Bestiary/ directory where you can find a list of all mobiles to be indexed. Feel free to add/remove entries to fit your needs.
+
+Known problems:
+The major problem is that this system is only able to index types which constructor actually sets mobile's properties. If the properties are set in the base/another constructor or method, then it will not be recognized and the entry will more than likely be blank.
+
+Last updates:
+(21.12.2008)
+- The forum post has been updated with the latest release! 
+
+(22.1.2008)
+- Ultima.dll updated (bin.PeekChar() problem)! 
+
+(28.5.2007)
+- Alari's background pack and enhanced data.xml included. Thanks!
+
+(27.5.2007)
+- Dispatch method rewritten, now each method has it's own handler.
+- Added attribute to support different backgrounds for each mobile, example:
+
+<mobile type="Server.Mobiles.Wisp" name="wisp" background="wtf.jpg" />
+( as you may have already guessed, the Wisp image will be generated with the "wtf.jpg" as background ).
+- Added support for using custom creature images. Just drop your custom image named after the type of the mobile (i.e. Wisp.jpg) to the /Bestiary/fixes/ directory. Also make sure to allow the custom fixes usage in the data.xml file.
+
+<mobiles useFixes="true">
+(by default it's set to false)
+
+(27.5.2007)
+- Updated Ultima.dll, fixed the map-diffs bug (thanks Alari)
+- Missing type will no longer throw an exception during the reading of XML data file. Instead a warning is displayed.
+
+I'm opened to all bug reports and suggestions, this is likely to be my last contribution to the RunUO community due to the lack of free time, so I hope you all will enjoy it.
+
+
+Download:
+
+If the forum archive doesn't work, you may download the system from here. 

@@ -1,0 +1,15 @@
+http://www.runuo.com/community/threads/70-custom-artifacts-some-bonus-items.480787/
+
+I bring you 72 (yes, that's seventy-two) custom-made artifacts. I wrote these forever ago when I was staffing on a server called Eclipse - which has since shut down. I've seen some of these on a couple other servers here and there, so I figured I'd just release it for everyone to use 
+
+Inside, you will find a huge list of artifacts, and a few folders. The first folder being "Deeds" which includes some bonus items, such as A Bow Balancing Deed, A Bow Velocity Deed, and a Weapon Renaming Tool. (please note, the renaming tool does not override the resource type, so if you renamed a valorite katana to "pwner", it would said "Valorite Pwner")
+
+Secondly, there is a folder called LanternCollection. When I staffed on Eclipse, everyone wanted a lantern that could be spellchanneling so you could use it while casting - of course, regular lanterns can't have spellchanneling on them, so I wrote these as a little bonus. I'm sure some of you will appreciate it. (And yes, these lanterns are lightable!)
+
+Lastly, there is a folder called OPArties - these are of course, the artifacts that were a little too overpowered even for my taste. I would recommend going through every artifact in the list to make sure it's balanced enough for you, but they shouldn't be too bad.
+
+Just throw these somewhere in your scripts folder, and compile!
+
+Enjoy!
+
+-- RTaylor aka Fenris 

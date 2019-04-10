@@ -1,0 +1,59 @@
+http://www.runuo.com/community/threads/acc-complete-spell-system.94891/
+
+
+ACC - Complete Spell System
+ 
+Description
+ This system was created to help implement custom spell systems to a shard without all of the hassle. It can be dropped in your custom folder (along with the other required system explained under Installation) and it's ready to go; as with the rest of my systems, distro files are not touched, and this system should be compatible with any other custom system out there (not tested, don't quote me) including Lucid's All Spells system (although I have no idea why you would do that).
+ This system uses my Central Memory system to keep track of Spell Icon locations on your screen. This means you can open up your druid book, click on a spell name, click on the icon, position the icon where you want it and it will stay there, always open (through casting and logging) until you click the red button on it to delete it. The distro spell systems are included to use the Icon placement; they, in no way, interfere with distro spells.
+ 
+Notes
+ Please see the notes in ACC Core post. Link below.
+ This spell system is ... old. The systems contained within it have been done and redone by various people. I will not vouch for the balance of these systems when added to a shard.
+ Testing done was limited to loading server, adding books, opening books, placing spell icon, casting from book/icon, saving, loading.
+ For the systems marked "(Compiled, not Cast tested)", I've done exactly that for testing...I compiled the server. I haven't casted every spell to make sure it works/doesn't crash/does what it's supposed to. I know for a fact that there's a lot of old code in these spells that isn't the same as the new spell code, so I don't know if the spells will work like they used to. (Transform spells and the Charm spell are big ones that are very different between old and new)
+ Use at your own risk at this point, and for the love of God, don't put on a live server.
+ If there are crashes due to this system, please post here or PM me with a debug crash log.
+ 
+Installation
+ Download and install ACC Core.
+ Download and install ACC Central Memory.
+ Download package: (SVN) (2.0)
+ Extract to your Customs folder (replace if updating)
+ Load server
+ 
+Instructions on Use
+ To come...
+ 
+Systems Included
+ •Magery
+ •Chivalry
+ •Necromancy
+ •Druid (Compiled, not Cast tested)
+ •Avatar (Compiled, not Cast tested)
+ •Bard (Compiled, not Cast tested)
+ •Cleric (Compiled, Cast tested)
+ •Ranger (Compiled, Cast tested)
+ •Rogue (Compiled, Cast tested)
+ •Ancient (Compiled, Cast tested)
+ Updates
+ 2010-02-10 - Fixed paging issue with spellbook gumps.
+ 2010-02-08 - Fixed paging issue with spellbook gumps.
+ 2010-02-07 - Updated to latest SVN. Fixed issue with settings not working correctly to create empty books.
+ 2009-12-22 - Updated to latest SVN.
+ 2009-10-28 - Cleaned up warnings. Updated to 2.0 Final and latest SVN. Please read notes in update post.
+ 2009-07-11 - Fixed problem with spellbook being equipped. Fixed AngelicFaith going past caps.
+ 2009-05-14 - Added Ancient system. Fixed paging issue with CSpellbookGump.cs
+ 2009-05-11 - Added 2.0 package for use in the released RunUO 2.0.
+ 2009-04-17 - Cast tested Ranger spells, all work to the specifications I can see they are supposed to. Cast tested Rogue spells. Re-wrote some code on a few of the Rogue spells to fix some exploits.
+ 2009-04-17 - Added [csscast command to cast spells. Each spell a person has can be assigned any command text to cast it with this command. Fixed system to not allow casting while in customization of a house. See update post for more info.
+ 2009-03-28 - Fixed Banish Evil spell in Cleric school to not allow targeting of players. Fixed a crash due to null reference in Banish Evil. Cast all other spells on myself, no crashes.
+ 2009-03-27 - Got all systems compilable. Please note that the systems have not been tested for casting!
+ 2009-03-27 - Updated to latest SVN (313). Fixing spells due to RunUO changes between last time I updated and now.
+ 
+ACC Collection Links
+ ACC Core
+ ACC Central Memory
+ ACC Yard and Garden System
+ ACC Public Gates
+ ACC Spellweaving, Bushido, Mysticism and Ninjitsu (tass23) 

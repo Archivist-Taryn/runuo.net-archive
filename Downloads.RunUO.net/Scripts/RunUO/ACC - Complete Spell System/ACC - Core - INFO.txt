@@ -1,0 +1,32 @@
+http://www.runuo.com/community/threads/a_li_n-completely-custom-core.79064/
+
+A_Li_N Completely Custom Core
+ 
+Description
+ The ACC Core is the backbone of my custom scripts. It features a registration system to register my systems (or any others might create) with the system. The system uses a separate save method that is called when the world saves to save all information that needs to be saved from the registered systems. There's a load method that loads them up as well.
+ 
+Installation
+ Download package.
+ Put in your Customs folder. (Replace old files if updating from previous version)
+ Load server.
+ 
+Instructions on Use
+ To come...
+ 
+Notes
+ 2009-03-27 - ]It has been almost two years since I even looked at a script, and I seemed to have left right in the middle of a thougth with these updates. It took about 5 hours of me looking at my scripts to figure out what was going on in my head 2 years ago. As such, these updates have been tested very little. This is what I have tested:
+ Loading of server
+ Load gump up (gump controls most of the system) and did some quick playing with it
+ Saving and loading server
+ This means there could be functionality errors in this release, so if you find any errors or crash logs that are caused by this system, please post here or PM me with the debug crash log.
+ 
+Updates
+ 2009-03-27 - Update to latest SVN (313)
+ 2007-02-07 - First post, updated to latest SVN. Generics updates.
+ 
+ACC Collection Links
+ ACC Public Gates
+ ACC Central Memory
+ ACC Complete Spell System
+ ACC Yard and Garden System
+ ACC Spellweaving, Bushido, Mysticism and Ninjitsu (tass23) 

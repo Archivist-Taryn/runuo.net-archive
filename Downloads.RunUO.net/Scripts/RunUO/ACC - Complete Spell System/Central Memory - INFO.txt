@@ -1,0 +1,36 @@
+http://www.runuo.com/community/threads/acc-central-memory.94890/#post-798459
+
+
+ACC - Central Memory
+ 
+Description
+ This plug-in for my ACC system is used to keep track of the various Modules one might install. A Module is used to store information about a system for a specific player/item. The easiest example I can think of would be a class system in the very lightest form. A class system puts each player into a class. Normally, this would require you to modify the playermobile.cs to implement a property and an enum of classes. With this system, you could create a 'Class' Module that keeps track of the information and is linked to that player.
+ 
+This release is the core system. There are no Modules for it as of yet. The first one I will be releasing will be part of the Complete Spell System (of which, I have the core and distro spells working). As of right now, I am willing to bet there is no need to download this update. If you have this system already working in your server using an old version of Complete Spell System or any other systems made by others that require Central Memory, I'd suggest NOT upgrading, as those systems most likely have not been updated to use the latest release (since I'm only now releasing it)
+ 
+If a better explanation of this system is required, please say so and I'll try to explain in more detail. Just know that this system is not required by anything that I know of yet, but will be soon.
+ 
+Notes
+ Please see the notes in ACC Core post. Link below.
+ Testing done has been limited to my Complete Spell System core files and distro spells, which uses a Module to keep track of spell icon gump locations. I loaded the server, added an Icon, saved the server and reloaded, all worked well. If anyone grabs and uses this system with their own Module and it crashes due to this system, please post here or PM me the debug crash log.
+ 
+Installation
+ Download and install ACC Core.
+ Download package.
+ Extract to your Customs folder (replace if updating)
+ Load server
+ 
+Instructions on Use
+ To come...
+ 
+Updates
+ 2009-03-31 - Added a check in ModuleList.Get( Type ) to see if the ModuleList has that type of module before returning it.
+ 2009-03-30 - IMPORTANT UPDATE - Added version to serialization. Follow notes in update post up update.
+ 2009-03-27 - Updated to latest SVN (313). Many generics updates and gump fixes due to them.
+ 
+ACC Collection Links
+ ACC Core
+ ACC Public Gates
+ ACC Complete Spell System
+ ACC Yard and Garden System
+ ACC Spellweaving, Bushido, Mysticism and Ninjitsu (tass23) 

@@ -1,0 +1,21 @@
+http://www.runuo.com/community/threads/acc-spellweaving-bushido-mysticism-and-ninjitsu.476794/
+
+
+I used mholmes' version of ACC Mysticism, made a few adjustments like changing the reagents back so they didn't use ACC's regs. I adjusted the Rising Colossus and the Animated Weapon spells to make them a bit tougher. Also any Mysticism spell based on Imbuing has been changed to Focus. I looked all over the forums to make sure it wasn't present. I apologize if someone else already uploaded it.
+
+ Thanks to:
+ A_Li_N for the CCC and CSS systems, along with the Central Memory
+ mholmes for his ACC Mysticism
+
+ Required:
+ A_Li_N Completely Custom Core
+ ACC - Complete Spell System
+ ACC - Central Memory
+ http://www.runuo.com/community/threads/acc-complete-spell-system.94891/
+
+ Installation instructions:
+ Extract archive into a folder.
+ Copy the Mysticism folders into the ACC Spell Systems folder (ACC\Complete Spell System\-=+ 03 Systems).
+ Copy the school.cs file into the Changing folder (ACC\Complete Spell System\-=+ 02 Changing) and overwrite the one that's there.
+
+ EDIT: (1-10-2012) Bushido and Ninjitsu have been removed from this system. With the exception of 1 or 2 things in either school that are actual spells, the rest are moves, and there is no way to register moves with ACC. 

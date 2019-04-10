@@ -1,0 +1,82 @@
+http://www.runuo.com/community/threads/runuo-2-0-svn-universal-storage-keys.87815/
+
+
+
+[RunUO 2.0 SVN] Universal Storage Keys
+ 
+
+The Universal Storage Keys!
+
+ 
+Overview
+ Based roughly on Daat99's storage keys, these are designed to give the developer as much flexibility as possible to allow quick design and maintenance of custom storage solutions for players. Some of the main storage types include:
+ •Resource Storage: Items like resources, where the amount is pooled into the keys.
+ •Tool Storage: Items like tools where the uses remaining or charges are pooled into the keys.
+ •"Generic" Storage: Custom tools like arrow dip tubs from [RunUO 2.0 RC1] Lucid's <<_Advanced Archery_>> or pet leashes from [RunUO 2.0 RC1] FS: Animal Taming Systems Gen2.
+ •"List" Storage: Distinguishable items like magic instruments, or treasure maps, where more than one property is needed to describe the item. These are displayed as a list of items, rather than a pooled quantity
+ •"Stash" Storage: Complex distinguishable items like weapons, armor, jewelery, or clothing.
+ •Key Storage: Store all your key types within a single Master Key!
+ 
+For players
+ These items make item storage and management a lot easier and more organized. Multi-use tools can be developed. Thousands upon thousands of stones worth of resources can be easily carried. When you craft, the resources can be directly withdrawn from the keys. When you cast, the reagents can come from the keys. You can use potions and water directly from the keys too!
+ 
+For developers
+ These items can significantly cut down the amount of world data on your shard. When items are "stored" within the keys, the physical item itself ceases to exist, while only relevant data (eg. uses remaining for tools, or amount for resources) is preserved. This could significantly reduce item count, and world load/save times, depending on how much stuff your players have stashed away in their houses/banks. Plus, it's easy to follow the example items to make your own type of keys that suit your shard's custom needs. Finally, this system is intended to be as easy to drop in and run as possible, so it should be little hassle to get it working for you.
+ 
+Compatibility
+ 
+NOTE: this system requires the CliLoc Handler project to function. After that, this has been tested and proven to work on a fresh download of the following:
+ •RunUO RC1
+ •RunUO RC2
+ •RunUO SVN 313
+ 
+FAQ and Quick Links
+ •How do I make these craftable?
+ •How do I make a pet kennel (storage for shrunken pets)
+ •How do I set up entries for custom BOD types?
+ •How do I set up entries for custom large BOD types?
+ •How do I make entries for my custom tools which do not use UsesRemaining to determine its use?
+ •How do I get arrow withdrawal to work with quivers from Mondain's Legacy?
+ •How do I make a command to fill keys from backpack?
+ •More questions?
+ 
+Details
+ 
+Changelog is listed here.
+ 
+Installation
+ 
+•Unpack this package somewhere within your server's "Scripts" directory
+ •Download the Cliloc Handler project and follow its instructions.
+ •(optional) Read through the files in the "Server Modification" subdirectory of this package, and follow the instructions. These allow the server to do things like withdraw from keys when crafting, casting, or using arrows
+ •(optional) Read through the "Extras.cs" file in the "Extras" subdirectory of this package. If you have the XML attachment system, uncomment line #2 of "Extras.cs" to enable the "[keyguard" command, which lets a player choose which items cannot be pulled into keys.
+ 
+Customizing
+ 
+Look in the "Items" subdirectory of this package for example items. In each file, there is a block near the top that looks like this:
+
+
+Code (text):
+
+
+         public override List<StoreEntry> EntryStructure
+         {
+             get
+             {
+                 List<StoreEntry> entry = base.EntryStructure;
+                 
+                entry.Add( ... ) );
+                 ...
+ 
+                return entry;
+             }
+         }
+  
+ You can modify this to suit your needs, or make new items based on these examples.
+ 
+Updating
+ 
+When a new version of this package is released, replace everything but the contents of the "Items" subdirectory. If you make changes to other parts of this package, please feel free to post them in this thread so they can be considered and included with this distribution.
+ 
+
+More details are located in the file notes.txt in the main directory of the provided file.

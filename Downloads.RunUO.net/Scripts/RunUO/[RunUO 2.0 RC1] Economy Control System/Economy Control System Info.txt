@@ -1,0 +1,44 @@
+Economy Control System
+
+ok guys ... 
+
+this package allows one to control the flow of gold into their shard. basically it consists of 2 scripts, and one modified distro.
+
+to use:
+place the control stone [stonegoldcounter] into your world. wherever you wish, but only the owner has access to its functions. clicking the stone will give you a complete count of gold in your world, including bankchecks, gold inside bankbox & packs, and also gold contained in creature packs or houses.
+
+then according to your wishes, you can limit or increase the gold drops into creatures lootpacks. props the stone and change the economy modifier value. its a percentage value, 100=standard drops, 200 doubles the gold drops, 50 halves the drops etc.
+
+
+to install:
+drop the files into a custom folder, and rename/delete the distro file lootpack.cs. if your lootpack is modified, you may wish to include my changes in your current lootpack.cs, if so replace the Roll() function in lootpack.cs, near line 915 with this one::
+
+
+Code:
+		public int Roll()
+		{
+			int v = m_Bonus;
+			double eco_Modifier = 100;
+			double w;
+
+			for ( int i = 0; i < m_Count; ++i )
+				v += Utility.Random( 1, m_Sides );
+	              	foreach (Item item in World.Items.Values)
+                                      {
+				
+                                      	if (item is StoneGoldCounter)
+                                 	{
+             	             	StoneGoldCounter GC = (StoneGoldCounter)item;
+            	              	             eco_Modifier = GC.EconomyMultiplier;
+                                       }
+
+			w = v * (eco_Modifier * .01);
+			return (int)w;
+		}
+i also included father time's checkbook from his token system. this version of the checkbook is a gold checkbook, rather than a token checkbook. if you use his token system, you may want to delete mine, as it will probably cause errors.
+
+now, before i post this, i'd like to thank the guys helping me with it. i can't really take any credit at all, as the biggest chunk of code was written by FingersMcsteal.
+
+you can read my post http://www.runuo.com/forums/showthread.php?t=77755
+
+thanx. 

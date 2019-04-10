@@ -1,0 +1,49 @@
+http://www.runuo.com/community/resources/custom-detect-hidden-and-reveal-hidden.94/
+
+
+
+
+Do you think it is a waste of time having to choose a target when trying to detect hidden players or traps? Do you find the Detect Hidden skill to be boring and not worth training? Then this script is for you.
+
+ This script completely changes how Detect Hidden is used. The Detect Hidden button in your skills gump has been disabled and replaced by two powerful commands: Detect and Reveal. Both commands rely on and will raise your Detect Hidden skill. 
+
+Using Detect
+ The concept behind Detect is that you are using senses other than sight to locate hidden players or creatures. When successful, you are able to see hidden characters within a certain radius around your character without revealing them for a short time, allowing you to do a surprise attack on that sneaky bastard. Detect does not last long, and when the effect expires the hidden character will become hidden to you once more. Detect will not locate hidden traps, because a trap is not a living creature. Detect does not require line of sight.
+
+ Using Reveal
+ The idea behind Reveal is that you are focusing all of senses (including sight) to find anything out of the ordinary around you. Reveal is much like your standard Detect Hidden skill, but relies on a certain radius around your character instead of choosing a target. Reveal will locate hidden traps and requires line of sight.
+
+ INSTALLATION:
+
+ 1. Place CustomDetectHidden.cs into the \Scripts\ folder somewhere.
+
+ 2. Locate DetectHidden.cs in your \Scripts\Skills\ folder and comment out lines 21 and 22. Example:
+ Original Code:
+
+
+Code (text):
+
+        public static TimeSpan OnUse( Mobile src )
+         {
+             src.SendLocalizedMessage( 500819 );//Where will you search?
+             src.Target = new InternalTarget();
+  
+             return TimeSpan.FromSeconds( 6.0 );
+         }
+ Change to this:
+
+
+Code (text):
+
+        public static TimeSpan OnUse( Mobile src )
+         {
+             //src.SendLocalizedMessage( 500819 );//Where will you search?
+             //src.Target = new InternalTarget();
+  
+             return TimeSpan.FromSeconds( 6.0 );
+         }
+ Be sure to save your edit.
+
+
+ I hope you enjoy this script. Please let me know if you have problems or suggestions! 
+Report

@@ -1,0 +1,21 @@
+[RunUO 2.0 RC1] Cat's Jail System
+
+I have been using this jail system since way back when it was released for Beta 36. This has been mostly plug and play in the other updates of RunUO, until now. I have taken the time to upgrade this awesome system for those that have used it in the past. I would like to thank Lokai for giving the help i needed to get this done. 
+
+This jail system contains a language autojailer for foul language(which you can specify words for). Also for those RP servers it also has an Out Of Character language autojailer( which you can also specify words for).
+
+Installation:
+Drop in your scripts folder and restart.
+
+Setup:
+You will need to use the command [adminjail to adjust the settings you want for your shard.
+
+I will try to support this the best I can.
+
+Update:
+7/06/06
+Updated to try and fix crash bug. (62)
+
+Update:
+7/06/06 8:00pm
+Updated to fix crash bug when using OOC settings. Has been tested inside and outside guard zones on player and staff.

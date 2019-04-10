@@ -1,0 +1,36 @@
+http://www.runuo.com/community/threads/runuo-2-0-svn-cliloc-handler.91665/
+
+
+[RunUO 2.0 SVN] CliLoc Handler
+ 
+Overview
+ The CliLoc reader tool provides a few easy-to-use methods for reading and assembling client localization text strings. These can be helpful when trying to display information like the ObjectPropertyList information given when the client mouses over an item or mobile. 
+
+The gump "ObjectPropertyListGump" synthesizes the client's display of the object property list. This can be hooked up into any project you have that may need this.
+ 
+For reading the client localization strings, the command [clilocviewer opens up the gump CliLocViewerGump. This gump lets you pick through, and filter the various cliloc strings. Helpful if you're developing with clilocs and need to find the right string to use.
+ 
+This tool was developed to facilitate an extension to the Universal Storage Keys project, as well as the Movable Addons. I figured that, on its own, it might be a useful tool for developers.
+ 
+Note: You need to provide a copy of the cliloc.enu file (or equivalent file for corresponding language). Details in the included notes.txt file
+ 
+For Players
+ 
+This tool has nothing directly accessible to players.
+ 
+For Developers
+ 
+There are rather easy-to-use methods to read in the object property list information. This could be useful for displaying item or mobile information without having to rely on the client's built-in method.
+ 
+The ObjectPropertyListGump is ready-to-go, and can be a good example for your own custom projects.
+ 
+Compatibility
+ 
+This has been tested and proven to work on a fresh download of the following:
+ 
+*RunUO SVN 300
+ *RunUO RC1
+ 
+Details
+ 
+The notes.txt file contains installation and implementation instructions. Changelog is listed in the following post. View attachment 15314 

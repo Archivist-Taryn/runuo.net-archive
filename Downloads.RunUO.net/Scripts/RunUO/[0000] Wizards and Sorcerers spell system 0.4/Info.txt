@@ -1,0 +1,40 @@
+http://www.runuo.com/community/resources/wizards-and-sorcerers-spell-system.100/
+
+
+Wizards and Sorcerers Package
+ This package adds a D&D style spell system with minimal edits to existing scripts. It also includes scripts for D&D style classes such as wizards, sorcerers, barbarians, clerics, etc., if you wish to expand on classes for your characters.
+
+ This packages also includes and requires my Multilinguists package, a Sleep package that I do not have the source of anymore, and a few new resources for spells and spell preparation. The Sleep package comes disabled for testing purposes.
+
+ Description of spell system:
+ The idea is for wizards to have to prepare spells beforehand at a camp or at an inn but have a 100% chance of casting it while out in the field, while sorcerers will have fewer spells but will be able to cast those spells using mana. I have added almost 70 spells and will be adding more in future updates. Some of my favorites are Palsy, Tongue Tied, Web, and Wall of Bone. Some do not work at all yet, such as Sleep. For now the sleep system that this requires is disabled.
+
+ The first thing a wizard needs is a spellbook. A new item called Magicianspellbook has been added and is the only way currently for a wizard to view spells that he knows. If a wizard loses his book, he will still know the spells he has learned before if he opens another magicianspellbook. The book only needs to be in his pack. Opening this book will give you more instructions on how to cast spells and prepare spells.
+
+ Wizards can be very overpowered if not for the time it takes to prepare spells. There are 8 spell levels, and each spell level takes a different amount of time for a wizard to prepare. These times are defined in SpellHolder.cs starting at line 152 if you want to look at the computations. A wizard must have the reagents required by the spell when preparing the spell. When casting a prepared spell the wizard does not need reagents!
+
+ At the moment, sorcerers can only cast spells from scrolls and cannot use the magicianspellbooks. When casting, sorcerers will consume mana and will not be able to cast if they don't have enough mana. Eventually the plan is to have sorcerers remember only a few select spells as their magery increases, and do not need a spellbook to cast and can still use scrolls.
+
+ Commands
+
+ To prepare a spell: [preparespell
+ To specialize a spell school: [specialize
+ All of the speech commands from Multilinguists are included.
+
+
+ Installation
+ To avoid a wipe, first install the Multilinguists package separately, and follow the instructions to avoid a wipe in the package description.
+
+ Unzip all files into the RunUO /Scripts/ folder.
+
+ Remove the following files from your Scripts folder: 
+
+Initializer.cs: \Scripts\Spells
+ PlayerMobile.cs: \Scripts\Mobiles
+ Reagent.cs: \Scripts\Spells
+ Spellbook.cs: \Scripts\Items\Skill Items\Magical
+ SpellRegistry.cs: \Scripts\Spells\Base
+
+ These files with minimal edits are included in the folder /Custom/Edited/ . If you prefer to make the edits yourself, I have commented what I have added in those files.
+
+ I hope you enjoy the package! If you find bugs, and you will, please let me know! This is not a final release. 

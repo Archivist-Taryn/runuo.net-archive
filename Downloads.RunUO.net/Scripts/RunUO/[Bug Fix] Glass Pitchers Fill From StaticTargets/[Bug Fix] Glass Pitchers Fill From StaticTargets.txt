@@ -1,0 +1,35 @@
+Empty Glass Pitchers can only be filled by targeting a Water Trough (Crafted or Deeded version), or another water container or beverage with water.
+
+I have written a fix that will enable Pitchers to be filled using static troughs, water barrels and moving water tiles (non-still water, like waterfalls, rapids, etc).
+
+Entirely new section of code added, spans lines 804 to 826 in Scripts/Items/Food/Beverage.cs
+Original file version: SVN REV 885
+
+
+Code:
+else if (targ is StaticTarget)
+{
+	StaticTarget src = (StaticTarget)targ;
+
+	if (src == null)
+		return;
+
+	if (src.ItemID >= 2881 && src.ItemID <= 2884 || src.ItemID == 3707 || src.ItemID == 5453 || src.ItemID >= 13549 && src.ItemID <= 13608)
+	{
+		if (!from.InRange(src.Location, 2) || !from.InLOS(src))
+		{
+			from.LocalOverheadMessage(MessageType.Regular, 0x3B2, 1019045); // I can't reach that.
+			return;
+		}
+
+		this.Content = BeverageType.Water;
+		this.Poison = null;
+		this.Poisoner = null;
+		this.Quantity = this.MaxQuantity;
+
+		from.SendLocalizedMessage(1010089); // You fill the container with water.
+	}
+}
+
+
+-----------------------------------------

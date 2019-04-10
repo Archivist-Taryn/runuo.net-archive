@@ -1,0 +1,48 @@
+http://www.runuo.com/community/threads/boots-of-swiftness.533755/
+
+Boots of Swiftness
+ Boots that give a speed boost to players for a certain amount of time!
+
+ By default it can be activated only once a day, and will last for 1 minute. However, you can change these settings in the script by editing the configuration region:
+
+
+
+Code (text):
+
+
+         #region Configuration
+  
+         // Players can use it only once a day by default
+         // Be sure to edit warning message: "You need to wait for a day until the magic recharges."
+         private static readonly TimeSpan UsageInterval = new TimeSpan(1, 0, 0, 0);
+         // Effect lasts for 1 minute by default
+         private static readonly TimeSpan EffectDuration = new TimeSpan(0, 0, 1, 0);
+         // Hue of the boots
+         private const int BootsHue = 2763;
+  
+         #endregion
+ Change the TimeSpan arguments to the desired time interval. The arguments are as follows:
+
+
+
+Code (text):
+
+TimeSpan(days, hours, minutes, seconds)
+ If you want it to be used again in 2 hours, 29 minutes and 59 seconds then set it to:
+
+
+
+Code (text):
+
+TimeSpan(0, 2, 29, 59)
+ Some insight:
+ •The item is not usable when the person is polymorphed.
+ •It also loses its effect when the person polymorphes.
+ •If the person takes the boots off, the effects are gone.
+ I have written this script for Oblivion Shard@RunUO v2.1 and had to generalize it a bit for publishing purposes, so you might encounter some errors due to that. But if you need any help please ask and I will answer your questions, or patch the script if needed.
+
+ You will need to change the hue value in the configuration as Oblivion Shard uses a different hues.mul.
+
+
+
+ Ideas for improvements are welcome, and bug reports are encouraged! 

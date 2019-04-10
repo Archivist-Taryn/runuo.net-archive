@@ -1,0 +1,95 @@
+[RunUO 2.0 RC1] Console Commands!
+
+Console Commands
+Current Version 2.0
+
+NOTE: This will not work on RunUO 1.0
+
+Introduction
+Console Commands (CC for short) will allow you to type predetermined commands straight into the console!
+
+Version History:
+v1.2 - 2.0
+Renaming of some commands, various "Performance Enhancement" fixes; ban, kick, and pages commands added; Fixed speech nul error message. 
+v1.1 -1.2
+Various "Performance Enhancement" fixes. New command, restart nosave, added.
+v1.0 - 1.1
+Fixed speech nul crash
+
+Commands
+
+•save Typing this command will save the server.
+•shutdown Typing this command will save and shutdown the server.
+•shutdown nosave Typing this command will shutdown the server without saving.
+•restart Typing this command will save, shutdown the server, then start it.
+•restart nosave Typing this command will shutdown the server, and start it.
+•online Typing this command will show a list of online players.
+
+Code:
+online
+- Account: retardedhobo, Name: sss, IP: 127.0.0.1
+- Account: retardedhobo1, Name: sdfsdtresres, IP: 127.0.0.1•bc Typing this command along with a message, will broadcast that message to all the players on the server.
+
+Code:
+bc hello everyone,im using CC!
+Players will see:  hello everyone,im using cc!•sc Typing this command along with a message, will broadcast that message to all the staff on the server.
+
+Code:
+sc hello staff, im using cc!
+Staff will see: sc hello , im using cc!•hear Typing this command will Enable/Disable everything the players say being shown on the console.
+
+Code:
+hear
+Now sending all speech to the console.
+sss (Yew): the admin can hear me on the console!•pages Typing this command will bring up all pages in queue, and allow you to answer them.
+
+Code:
+pages
+--------------Page Number: 0 --------------------
+Player   :TEstPlayer
+Catagory :Other
+Message  :Can i have some gold?
+Type the number of the page to respond to.
+0
+Type your response
+We do not give out free stuff.
+Message Sent...•ban <playername> Typing this command along with the mobile name, will ban and kick that player.
+
+Code:
+ban sdfsdtresres
+Mobile name: 'sdfsdtresres' Account name: 'retardedhobo1'
+Banning complete.•kick <player name> Typing this command along with the mobile name, will kick that player.
+
+Code:
+kick sdfsdtresres
+Mobile name: 'sdfsdtresres' Account name: 'retardedhobo1'
+Kicking complete.•list or help Typing this command will bring up a list of commands much like this one.
+
+Installation
+Drop 'n Go!
+
+I accept all versions of input regarding this script!  
+Attached Files:
+CC2.0.cs
+File size:13.9 KBViews:1,016BeneathTheStars, Jul 12, 2006 Report #1 Like Reply Felladrin likes this. .BeneathTheStars 
+Wanderer
+ These two scripts are optional, and can be ran without having Console Commands in place.
+Optional Scripts
+
+TalkConsole.cs - This script will allow a staff member( Seer or above, can change in script) to send a message to the console.
+
+Code:
+[tc We have a problem, get on!Console:
+
+Code:
+Message from 'TEstPlayer': We have a problem, get on!PlayerConsoleLogin.cs - This will alert you when a new player has logged on.( Works on 1.0 and 2.0 )
+
+Code:
+Client: 127.0.0.1: Connected. [1 Online]
+Login: 127.0.0.1: Valid credentials for 'retardedhobo'
+Login: 127.0.0.1: Account 'retardedhobo' at character list
+[COLOR="Red"]Login: 127.0.0.1: Account 'retardedhobo', Has logged in with character 'Testplayer'[/COLOR]To install either of the two scripts, just place inside the Scripts (or any folder inside Scripts) and restart the server 
+Attached Files:
+TalkConsole.cs
+File size:525 bytesViews:243PlayerConsoleLogin.cs
+File size:705 bytesViews:232
