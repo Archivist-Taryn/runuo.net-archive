@@ -1,0 +1,8 @@
+http://orbsydia.com/forum/showthread.php/872-Vendor-Access-Levels-Community-Script
+
+
+This distro modification was created as a way to control who buys from what npc vendor based on player accesslevel. There are 4 edits in the BaseVendor script. This can be implemented on all versions of the core/distro scripts. 
+
+I included a freshly edited distro copy of the BaseVendor.cs... the edits are easy to find:
+
+Search For (Ctrl+F in C# Express): VendorAccessLevel

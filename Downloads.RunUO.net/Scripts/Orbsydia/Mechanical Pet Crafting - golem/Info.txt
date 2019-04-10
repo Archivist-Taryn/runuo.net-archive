@@ -1,0 +1,21 @@
+Mechanical Pet
+ Tinkering Skill is needed
+ This will create a Statue in their pack- owner will need to click the statue
+ which will then release the pet, Tinkers can sell this statue
+
+ Items needed for Tinker to create this pet
+ Iron Ingots
+ Clockwork Assembly
+ Power Crystal
+ Gears
+ This contains:
+ Hue = Utility.RandomList ( 2878, 2842, 2956 );
+
+ Be sure to check the dex,str and int
+ along with the hits to suit your server
+
+ Pet will be auto bonded
+ If you want to change this, look in MechanicalPetStatue script
+
+ ControlSlots = 4;
+ MinTameSkill = 101.1; (( these can be changed in MechanicalPet.cs script 

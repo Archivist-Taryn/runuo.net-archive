@@ -1,0 +1,13 @@
+http://orbsydia.com/forum/showthread.php/611-GuildMate-Travel
+
+Another old release from years and years ago. I took the liberty to merge it with the updated Guild menu, and added edit markers (and changed the wording a bit).
+
+
+What does it do?
+
+This system will allow players to request a guild member to come to them, or request permission to go to them. You'll find the two new options under Guild Roster > Member Info. When a player makes a travel request, the other player is presented with an Accept/Deny gump. After both parties agree, the player will be teleported to their guildmate immediately. This certainly adds a whole new dimension to guild warfare, and convenience to hunting parties. 
+
+
+Installation
+
+I've provided a copy of GuildMemberInfoGump.cs (located in Scripts/Gumps/Guilds/New Guild System) with the needed edits. Simply drag n' drop the Guildmate Travel folder anywhere within your Customs folder, and copy/paste over your copy of GuildMemberInfoGump.cs

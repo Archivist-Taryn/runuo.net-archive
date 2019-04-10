@@ -1,0 +1,59 @@
+Add this code just under the "You cant tell someone to attack themselves" else statement. This will allow players with the provoke skill to defend themself with barding. Merely lets you target a player as the secondary provoke target.
+
+
+Code:
+//allow for targetting a player
+				else if( targeted is PlayerMobile )
+				{
+					PlayerMobile player = (PlayerMobile)targeted;
+
+					if ( m_Creature.Unprovokable )
+					{
+						from.SendLocalizedMessage( 1049446 ); // You have no chance of provoking those creatures.
+					}
+					else if ( m_Creature.Map != player.Map || 
+						!m_Creature.InRange( player, BaseInstrument.GetBardRange( from, SkillName.Provocation ) ) )
+					{
+						from.SendLocalizedMessage( 1049450 ); // The creatures you are trying to provoke are too far away from each other for your music to have an effect.
+						from.Target = new InternalFirstTarget( from, m_Instrument );
+					}
+					else //valid pair
+					{
+						from.NextSkillTime = DateTime.Now + TimeSpan.FromSeconds( 10.0 );      //Appropriate skill delay for player provoke
+						
+						double diff = ((m_Instrument.GetDifficultyFor( m_Creature ) + m_Instrument.GetDifficultyFor( player )) * 0.5) - 5.0;
+						double music = from.Skills[SkillName.Musicianship].Value;
+
+						if ( music > 100.0 )
+							diff -= (music - 100.0) * 0.5;
+
+						if ( from.CanBeHarmful( m_Creature, true ) && from.CanBeHarmful( player, true ) )
+						{
+							if ( !BaseInstrument.CheckMusicianship( from ) )
+							{
+								from.SendLocalizedMessage( 500612 ); // You play poorly, and there is no effect.
+								m_Instrument.PlayInstrumentBadly( from );
+								m_Instrument.ConsumeUse( from );
+							}
+							else
+							{
+								from.DoHarmful( m_Creature );
+								from.DoHarmful( player );
+
+								if ( !from.CheckTargetSkill( SkillName.Provocation, player, diff-25.0, diff+25.0 ) )
+								{
+									from.SendLocalizedMessage( 501599 ); // Your music fails to incite enough anger.
+									m_Instrument.PlayInstrumentBadly( from );
+									m_Instrument.ConsumeUse( from );
+								}
+								else
+								{
+									from.SendLocalizedMessage( 501602 ); // Your music succeeds, as you start a fight.
+									m_Instrument.PlayInstrumentWell( from );
+									m_Instrument.ConsumeUse( from );
+									m_Creature.Provoke( from, player, true );
+								}
+							}
+						}
+					}
+				}//end of else (target is player)Added my version in case you find it easier to merge in the code.

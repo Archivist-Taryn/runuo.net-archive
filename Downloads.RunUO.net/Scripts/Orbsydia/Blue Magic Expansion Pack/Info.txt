@@ -1,0 +1,90 @@
+This system primarily focuses on the Final Fantasy's Blue Magic concept but it's not all about the mages so to speak. The system is almost totally drag and drop and only requires about four lines of code edits to a single file. Overall, about two dozen quests will be added, dozens of custom craftable/upgradable items, over 30 new spells, 40+ new special attacks, a new town and meeting area, new dungeons, new pets, you name it. And best of all, this system is both currently expanding and well supported by it's author. All you have to do is submit your bugs here and I'll fix them for you.
+ 
+ 
+ 
+A little warning though, this isn't a cake walk system designed to be handed in it's entirely to a new player. This is an advanced expansion. It requires work and effort on your players part. On my primary testing site (CoV) the players there love it but required some hand holding to know what they were doing. Things reached a point there will the Pokemon Trainer and Blue Mage run tandem on quests which is exactly what I wanted. Anyway, on to details!
+ 
+ 
+ 
+Setting Up
+ 
+Download the attached rar, if you' using the Orb SVN just unzip it unto your customs folder and you're done. If you using default RunUO you'll have to go into the BME files and unzip the Mobile Abilities files and make the edits to ScriptsMiscAOS. Don't worry, it's really simple. Load the world and run the [bluespawn command.
+ 
+ 
+ 
+Note on "Near Class" System
+ 
+Blue Mages cannot have more than 50.0 for their base skill in Magery, Necromancy, Chivalry, Spellweaving, or Mysticism. You are allowed you use items to increase your skill value up to your cap as normal. Additionally, the author (me) has a zero tolerance for Blue Mage Tamers and you cannot have more than 0.0 in Animal Taming.
+ 
+ 
+ 
+Should your skill be higher than the allowed value your skills will be lower on joining and each and every single time you cast a Blue Spell. Pokemon style shards have literally taken over freeshards and thanks to Druidic Spells offering such things as infinite mana and four times better healing rate as a mass spells being offered in FSATS there is no reason to train any skill other than Animal Taming and Magery (for 2 of its 64 spells, mark & gate). This is me breaking you of that standard, and don't worry too much, since Bushido is allowed you can train and breed a Lesser Hiyru, you'll have to heal it like you should (veterinary).
+ 
+ 
+ 
+Additionally the secondary systems make use of the NPC Guild System. OSI/EA never expanded on them outside of the Thieves Guild is able to use Disguise Kits and steal from players. This means you can only get one "shiny new thing" per character. Since Blue Mages are not tied to the NPc guilds this doesn't mean you can't make a Blue Mage Artificer so go ahead and try it, but I did prevent the craftable Golems from bonding to Blue Mages 
+ 
+ 
+ 
+Becoming a Blue Mage
+ 
+*Currently BlueBen isn't spawned into the world via the generator command, this means you'll have to add him your self (where ever you wish) just be sure he is created off a spawner. Removal of him, like ANY MondainQuester will crash your saves.*
+ 
+ 
+ 
+Run up and talk to Ben. If your Forensics skill is below 51 you're offered a New Haven style skill training quest. The 51 threshold rather than 50 means you can start with the maximum amount of skill and still reap the rewards. Once you have over 51 in Forensics you'll be asked a series of questions and then sent on a go fetch quest based on your answers. It's ML style so you'll have to mark the item as a "Quest Item", then turn it in. You'll be given one last confirmation menu and then you're in.
+ 
+ 
+ 
+Learning and Using Spells
+ 
+80% of the spells are learned by getting hit by them and nearly every monster spawns in Ilshenar. Beneficial spells can only be learned by studying the corpse of the monster whom teaches it (by using [bm study). A couple of spells are learned by other various means, for instance Auto Life is learned as a quest reward and Angel's Snack is a lootable item.
+ 
+ 
+ 
+http://uoarchive.com/index.php/downloads/viewdownload/20-content/22-blue-magic-expansion-pack
+
+
+Blue Magic Expansion Pack Version:1.13
+
+
+
+To cast a spell it's as simple as typing in [bm, you'll be given a menu showing a list of spells know along with buttons to cast or to inquire further information on them. The command supports a wide range of arguments meant for macroing too. By adding the name of a spell (no spaces) you can cast the desired spell without having to open or click on the menu. For example open your client options, add a new say type macro, bind to which ever key, and for the text box type in [bm whitewind. Now you have a key binding for casting your healing spell (assuming you know it). you can use [bm help at any time in game for a summery of what it can do for you too.
+ 
+ 
+ 
+Questing - Blue Touched
+ 
+A special type of clothing was designed for Blue Mages called Blue Touched, the concept is based off Dungeon & Dragons:Online's Dragon touched garments. The clothing can only be worn by Blue Mages though. By signing up for the Tier 1 slayer you'll get a random article of blessed clothing with 5% resists. The Tier 2 gives an enhancement scroll and the Tier 3 gives a second scroll that stacks with the Tier 2 scroll. There are 9 different enhancements, or 81 possible combinations, for 9 different layers of clothing. And of course a 10th enhancement for the 10th item.
+ 
+ 
+ 
+***
+ 
+******
+ 
+*********
+ 
+******
+ 
+***
+ 
+ 
+ 
+1.13 Update (more beta crap by Peo!)
+ 
+Folders reordered, you'll have to do a full removal of the old folder and drop the new on in to update.
+ 
+New Monk quests, a quest for the gloves, 0 to 1, 1 to 2, and 2 to 3 upgrades are in as beta tests.
+ 
+New Objective for the MLQuest system called Study. Like the Solen quest you just walk over to an area and wait.
+ 
+Seems like it works though the quests are only coded as far as flavor with some study objectives to test handling.
+ 
+Do not use these quests on you're live shard until further testing, which you may participate in if you desire.
+ 
+New Other folder which will be used to hold misc things not tied to Guilds or Blue Mage
+ 
+BankStorageDeed (the one I posted on RunUO), used it to increase your maximum bank storage count.
+ 
+HealByEatting, if you have TasteID you can heal HP by eating food. Awesome!

@@ -1,0 +1,13 @@
+This is like a BOD system for resource gathering. It contains support for leather gathering, and mining, although the lumberjacking support is there, I've commented it out - as it can give carpentry powerscrolls as a reward. Not everyone would want that.
+
+ How It Works
+ A player can visit a resource gatherer, single click him, and obtain a resource order. This will be a random resource type, and amount to gather. The deeds are hued based on the resource needed to gather, and they also display how much they are holding and need.
+
+ The player can fill this deed with ore or leather (logs if you uncomment the support). Once full, it can then be turned in at the resource gatherer by dropping the order on him. It has a chance of a powerscroll (based on both amount of the deed and the resource), and yields a gold reward for the resources.
+
+ Our players love this, because they can turn their extra resources into gold without having to sell to other players.
+
+ Installation
+ Drop the system into your customs, then just place ResourceGatherer in any towns you want. They go nicely in those usless mining shops, gypsy camps, and more 
+
+Enjoy! 

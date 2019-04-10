@@ -1,0 +1,12 @@
+ACC System
+I'm not even sure what ACC means.
+Alien's Central uhh-Cemory?
+
+This system is drop in and go. No edits to your spell or regent files for it to operate. If you don't know what spells I'm talking about, hi and welcome to the Mod community.
+
+Credits
+The rar it's self contains no credentials but if I recall things correctly, Cleric and Druid were coded long ago and rereleased by dozens of people over time. The ACC System was coded by Alien but he spelled it like Al_i_en or something and it included his dynamic gate system.
+
+The project was then taken over or update at least by Lucid Nagul as the All Spells System. He added the previously post by author known Bard, Rogue, and Ranger spells.
+
+This exact version is unknown. It contains the Cleric and Druid spells only. The Cleric's Hammer is using Chaos/Direct in it's damage types so it had to have been update post ML. Likewise unlike the horrible FSATS version the Druid's Enchanted Grove doesn't allow necromancers to murder people in Trammel. It compiles under Orb SVN v9 (post RunUO 780) just fine.

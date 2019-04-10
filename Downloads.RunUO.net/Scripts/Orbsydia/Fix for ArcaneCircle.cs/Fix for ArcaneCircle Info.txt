@@ -1,0 +1,5 @@
+Some users may run into a bit of an issue with Arcane Circle (Spellweaving). When players try to cast the spell on an Arcane Circle (including within Sanctuary), they'll receive:
+
+
+You must be standing on an arcane circle, pentagram or abbatoir to use this spell. 
+This edited version of ArcaneCircle.cs removes the Z check, so that the Arcane Circle addon functions fine. If you have no issues casting the Arcane Circle spell, you do not need this fix. This edit should function fine with servers as old as Orb SA r17.

@@ -1,0 +1,24 @@
+http://orbsydia.com/forum/showthread.php/563-Fixed-quot-Palace-of-Paroxysmus-quot-with-new-Engines-!-quot
+
+
+Hi guys i have fixed "Palace of Paroxysmus" same as i found on "UoGuide" Site :
+
+- After collecting 4 reagent (Skull Legs Torso and Spleen), player throw it on Parox Cauldron and recive 3 "Slimy Ointment".
+
+- DoubleClicking 1 of 3 "Slimy Ointment" player became immune to "Acid River Poison", and can pass through it for clicking the "Iron Gate" for enter on Parox Dungeon and Kill Chief Paroximus.
+
+- After Killing Boss the 3 Key desappears.
+
+
+Without this modification player recive 3 "Slimy Ointment", and doubleclicking it gain the access for Kill Paroximus Boss
+
+
+For implement this new Engines i modified some file :
+
+- "Palace of Paroxysmus" folder, must move in "RunUO\Scripts\Expansions\Mondain's Legacy\Engines\Peerless System" folder overwritting existing file
+
+- "PeerlessAltar.cs" , must move in "RunUO\Scripts\Expansions\Mondain's Legacy\Engines\Peerless System" folder overwritting existing file
+
+- "Regions" folder, must move in "RunUO\Scripts\Expansions\Mondain's Legacy" folder overwritting existing file
+
+- "PlayerMobile.cs", must move in "RunUO\Scripts\Mobiles" folder overwritting existing file

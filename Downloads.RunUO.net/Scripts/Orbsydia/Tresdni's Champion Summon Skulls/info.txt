@@ -1,0 +1,22 @@
+http://orbsydia.com/forum/showthread.php/865-Tresdni-s-Champion-Summon-Skulls
+
+
+Just a nice gift for players that allow them to fight a champion.
+
+How It Works
+
+The player double clicks the champion skull somewhere out in the wild. It then sinks into the ground like a moonstone does and summons the champion to fight.
+
+Features
+
+- Does not work in towns.
+- Does not work in dungeons.
+- Does not work in player homes.
+
+Includes
+
+- Baracoon Skull
+- Harrower Skull
+
+---------------------------------------------
+You can add more, just copy one of them and replace the classes and the creature it summons. It is really endless on what you can make them spawn. Regs, items, creatures, anything. The thing I like the most about them is how they sink like the moonstones.

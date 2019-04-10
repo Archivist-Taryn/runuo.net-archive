@@ -1,0 +1,33 @@
+http://orbsydia.com/forum/showthread.php/849-Tresdni-s-Gold-Raffle
+
+
+
+Here is my complete gold raffle system. I wrote it last week.
+
+How It Works
+
+Players buy entries (multiple allowed) for the price you set it at. The raffle will draw every (x) days, also dependant at what you set it at. It is currently set to draw every 3 days, at 100k per entry by default.
+
+It supports the purchase of entries by gold ledger and/or gold from backpack at the moment. Feel free to mod payment as you wish.
+
+The Drawing
+
+Once the drawing happens, a name is chosen randomly from the stored list of entries. All gold pooled in the raffle goes to the winner and the next raffle is ready to enter and a new date is set.
+
+Features
+
+- The stone shows the current pool on hover over, as well as the date/time of the next drawing.
+- The gump shows the last raffle's winner, how much they won, and when they won it.
+- The gump shows the biggest winner, how much they won, and when they won it.
+
+goldraffle.png
+
+Installation
+
+1. Drop the files into your customs folder, or whever you choose.2. Load your server, and add your raffle stone.
+3. Save and restart your shard.
+4. Enjoy ongoing automated raffles forever, crash free.
+
+*By default, since it supports payment from a player's gold ledger, you must have Alpha's Gold Ledger on your server. If you do not, you will need to modify the gump script (super easy).
+
+Hope you enjoy it, figured I'de release something here finally. RunUO.com will never see me again.

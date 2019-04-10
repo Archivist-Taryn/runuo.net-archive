@@ -1,0 +1,8 @@
+httporbsydia.comforumshowthread.php743-Magincia-Bazaar
+
+
+
+This is a modification based on an OSI concept called The Encampment System. It allows players to place vendors on vendor tiles. The Vendor Mall Package was written by others and I just updated it to work with the SVN here. It includes a mall manager who sells the vendor contracts for 5k and players D-click ticket and target an available tile.
+It also came with a vendor mall add-on for those wanting an actual mall. Ive created the 4x4 tile add-ons [23 total] for Magincia [50 locations or stalls are marked by 4x4 tile dirt patches]. If you havent already you will need to delete left over statics in the city, I won't lie there are still alot of items to remove. 
+
+I may consider auctioning off the vendor tickets with Xanthos Auction System to give it more authenticity but the choice is yours... Have fun.

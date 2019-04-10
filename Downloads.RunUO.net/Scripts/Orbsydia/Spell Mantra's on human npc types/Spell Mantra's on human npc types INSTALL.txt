@@ -1,0 +1,9 @@
+Hiya, very simple mod here I think makes human npc's a little more fitting with the uo feel. Simply lets npc's with a human body able to use the mantra's as players do. In Spell.cs in the SayMantra Method replace this code:
+
+
+Code:
+			if ( m_Info.Mantra != null && m_Info.Mantra.Length > 0 && (m_Caster.Player ) )With this:
+
+
+Code:
+			if ( m_Info.Mantra != null && m_Info.Mantra.Length > 0 && (m_Caster.Player || m_Caster.Body.IsHuman) )Show Your Support

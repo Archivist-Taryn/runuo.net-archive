@@ -1,0 +1,7 @@
+1- This is Nerun's Distro r.64 for OrbSA project.
+
+2- It is shared like a Tortoise SVN patch.
+
+3- Do not ask me how to apply the patch.
+
+4- Visit RunUO foruns for other instructions: Nerun's Distro in RunUO Forum

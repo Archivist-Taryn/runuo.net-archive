@@ -1,0 +1,14 @@
+Updated:
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ Now works with Group Dungeon System 1.7 Final
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+ Here it is ..Working Group Dungeon System 1.7 working on ForkUO build v1.2.3 (0.2)
+ in *.txt file includes edit needed for the ForkUO playermobile.cs
+
+ I take no credit for it..all goes to the creator..I just got it ported over to ForkUO
+
+ What this does:
+ Allows you to create dungeon instances for groups/raids etc... be sure to read the text file included on how to setup your specialized Dungeon area... and install..
+
+ I will for warn you.. I havent had a chance to fully test to make sure everything is working as intended.. I did manage to get code to compile and a few dungeons setup for use... but havent gotten players into the area to test if more players can enter or not and if the instance part is working..etc... Hoping to get a few to help with that =) and report any issues .. 

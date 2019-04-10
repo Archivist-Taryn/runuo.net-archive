@@ -1,0 +1,32 @@
+This system has been around a while but I felt it needed updating since I like the system and I think others do as well. I have updated this for the Orbsydia SVN 17, so if you do not use that SVN your out of luck unless you want to convert it back to what SVN you use. I have gone from 41 socketed armors to 148, 7 socketed shields to 16 and 43 socketed weapons to 102. I think i have covered all the expansions with adding the items. I do not take credit for this base system, a lot have contributed to this system and I thank them, Original author Xeus, First updater that i knew of LORD HOG FRED, and these others i have found names in files KillerBeeZ for the HCube. Ashlar and Tylius for updating the socketedgemkey. Also a special thanks to GoldDraco13 for the ingot key script to work off of. If I am missing others i did not find your names in any scripts or in any of the post i downloaded this from, but thanks to you too if you had something to do with this system. I have spent many nights workings on this so i hope some can find this useful.
+
+Heres a list of things I have changed,
+
+1 - I have updated every script with a little better drop rate of 5% for a 3 socket, 15% for a 2 socket and then 80% for 1 socket. That is if you even get a socketed item to drop. So you will not get alot of 3 sockets all at once.
+
+2 - I cleaned up the Gems, they are not as overpowering and I listed every gem with a label of what it does on mouse over. Plus a bonus I cleaned up the color system so it is more pleasant to the eyes.
+
+3 - I have added all the new items from all the expansions that it did not have before, so I believe I got all the ML and SA items that I think should be dropped.
+
+4 - I have included my version of the Horadic Cube which I believe is more pleasant to the eyes as well. I also remade it so you can easily update more ways of using it within the gump.
+
+5 - I have implemented the system into the loot and lootpack cs files for the drops. So you can have magic items with sockets. This you can play with to make more drops or less drop just by adding it to each type of loot drop.
+
+6 - I have included my version of the Socketed Gem Key, which adds and takes a certain amount of gems at one time. Since I changed the gems to be stackable I had to change the key.
+
+Hope you have fun with this version, ManofWar.
+
+Edit - Forgot about this other little file that i had for this system, Gem Mining. What it does is you can mine the crystals like in Malas and you get regular type game gems. The kicker is the Bonus Resources stuff you get sometimes are the Chipped Diablo type gems. Have fun mining and i do not think this will give to much to players to unbalance the gold on your shard. Since it will take time to actually mine the regular gems and the drop rate for chipped is not very high, which you can always change up or down in the script.
+
+Edit 2 - I uploaded a new batch of fixed files for the the Socket system. You should note the fixes in this Batch.
+Fix 1 - Got rid of the annoying message even though you were able to use the gem.
+Fix 2- Relates to fix 1 since I tried taking it out, So now i added back into the gems More commands and fixed their scripts since i was lazy last time and did not straighten anything out. Also did not know if people would like this version. So for the list of new stuff, here it goes,
+1 - Now you have to be a Legendary Tinker to do any Socketing at all. Can be changed in gem scripts.
+2 - Besides Tinkering you will also need Legendary Blacksmith, Tailor, Fletcher. Ranged weapons need Legendary Fletcher as their second skill to augment, All other weapons need Legendary Blacksmith. Plate, Ring and Chain Armor needs Legendary Blacksmith while all other armors need Legendary Tailor. Shields need a Legendary Blacksmith only as their second skill.
+3 - I did more Eye candy and added new colors for the Messages of the system.
+4 - I changed the way I did the enhance and destroy methods. Now it is 95% chance to Enhance and a 5% chance to fail. Then on fail I got it as 99% to just loose -3 max hit points and -3 hit points on item. Its set for a 1% chance to completely destroy the item.
+5 - I changed the Luck in the Topaz gems since i think 300 luck per piece of armor was to much, I set in now as a max of 150 with three sockets
+
+Fixed the Gem Mining files please download again. Also i put a new version up of mining which is Crystal mining, same as gem mining but i noticed in the regular mining they used some of the code i did so i just changed all the code so I wouldn't bother the original even if it was unintentional.
+
+So please download this new file Diablo2System2.2 and just over write all the files and you should be good to go. I took down the first rar since i had errors in it.

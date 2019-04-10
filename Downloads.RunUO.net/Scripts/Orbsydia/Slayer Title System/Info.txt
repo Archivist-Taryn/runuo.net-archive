@@ -1,0 +1,89 @@
+Slayer Title System
+ Version 2.5
+ Designed for ForkUO 0.2
+
+ Authored by Dougan Ironfist
+ Last Updated on 2/5/2013
+
+ Using these scripts will allow shard administrators to create fun kill-based titles that players can earn.
+
+ This is a simple system that allows you to create as many slayer title systems as you want. Two example systems are included in the package. The system uses attachments to track slayer title progression.
+
+ The example systems are setup in the following manner.
+
+ Sheep Slayer Example
+ · Hunter of Mutton title is awarded after 50 sheep kills
+ · Master of the Feast title is awarded after 100 sheep kills
+ · Collector of the Wool title is awarded after 250 sheep kills
+
+ Dragon Slayer Example
+ · Apprentice Dragonslayer title is awarded after 50 kills
+ · Accomplished Dragon Hunter title is awarded after 250 kills
+ · Master of the Leather Winged title is awarded after 1000 kills
+ · Terror of the Skyborn title is awarded after 5000 kills
+ · A Dragon Statuette is awarded when the final Title is achieved.
+
+ Customization of Core System [Revised for Version 2.5]:
+
+ The following customization of the core system is required to allow players to gain slayer title poits by killing monsters.
+
+ Open the BaseCreature.cs script and locate the following code.
+
+
+Code:
+public virtual void OnKilledBy( Mobile mob )
+{
+    if ( m_Paragon && Paragon.CheckArtifactChance( mob, this ) )
+          Paragon.GiveArtifactTo( mob );
+    .
+    .
+    .
+} 
+Now change the code to:
+
+
+Code:
+public virtual void OnKilledBy( Mobile mob )
+{
+    if (this.m_Paragon && XmlParagon.CheckArtifactChance(mob, this))
+          XmlParagon.GiveArtifactTo(mob, this);
+ 
+    if (mob is PlayerMobile)
+          CustomsFramework.Systems.SlayerTitleSystem.SlayerTitleCore.OnKilledByEvent(this, ((PlayerMobile)mob));
+    .
+    .
+    .
+} 
+Installation of the Core Slayer Title System and Examples:
+ Simply unzip the archive and drop the Reputation folder anywhere inside your Scripts folder.
+
+
+ Changelog:
+ 
+Version 2.5
+ •
+Revised the system to use the Customs Framework engine. The system now exists as a Core and a Module that attaches to players.
+
+ •
+To create new slayer titles, you now just have to register the parameters with the Core as shown in with the example script.
+
+ •
+Added several new events to allow easier access to the core without modifications. Two of these events are shown in the example script.
+
+ •
+PostPrep event is run when the Core has finished initializing and title system registration can begin.
+
+ •
+SlayerTitleAwarded is run when a player is awarded a new title.
+
+ •
+MaxSlayerTitleAchieved is run when a player reaches the maximum title for a title system.
+
+ •
+The core modification has changed. If you made a core modification using a previous version of the slayer title system, then you need to remove it and use the new modification.
+
+ •
+All scripts and namespaces have been rewritten. You need to remove all old slayer title scripts from your system before using this new version.
+
+ •
+The attachments used in both version 1.0 and 2.0 of the system will be automatically converted to the new Module. The attachment will then be deleted.

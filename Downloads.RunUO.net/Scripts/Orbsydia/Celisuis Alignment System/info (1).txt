@@ -1,0 +1,44 @@
+http://orbsydia.com/forum/showthread.php/780-Celisuis-Alignment-System
+
+
+Hey All,
+
+
+I after promising people a new alignment system, here it is!
+
+
+I've made it fully stand-alone from my Race System so it can be used without it.
+
+
+This includes the alignments from DnD:
+
+
+
+
+•Lawful Good
+•Neutral Good
+•Chaotic Good
+•Lawful Neutral
+•True Neutral
+•Chaotic Neutral
+•Lawful Evil
+•Neutral Evil
+•Chaotic Evil
+
+This system only adds the properties, what you do with it or how you set them is entirely upto you.
+
+
+This does require edits to Playermobile and Notoriety. 
+
+
+All edits can be found in the Installation Text.
+
+
+This system also allows Good and Evil to be at war, to show alignment titles or even deactivate certain alignments.
+
+
+Simple look in AlignmentSystem.cs for the setup to your needs.
+
+
+Note: At War and Titles are defaulted to false.
+

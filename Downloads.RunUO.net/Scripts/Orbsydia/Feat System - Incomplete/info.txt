@@ -1,0 +1,49 @@
+http://orbsydia.com/forum/showthread.php/479-Feat-System-Incomplete
+
+
+
+Hey All,
+
+Here's an idea I had to implement `Feats` into UO.
+
+This system is Incomplete, I will be working on it, however I thought I would release it as it is, so you guys can work with it aswell.
+Unless you have an Orc Race - All references to orc, will need to be commented out.
+
+In this system I have managed to write:
+
+
+
+•BaseFeat - All Feats are derived from this class.
+•RegenHits Feat - Untested! This is meant to work by allowing quicker health regeneration during combat.
+•Resistance Feat - Untested! This is meant to add resistances to the carrier. 
+
+
+All feats are weightless and invisible.
+
+I have written the command - [feats to open up the feats gump.
+
+I have only written the Human Gump for now, and the Passive Feats.
+
+1 Example Active Feat Uploaded.
+
+Passive Feats Include:
+
+
+
+•Advanced Healing - Regen Hits (Explained Above)
+•Healers Oath - Increases Healing cap to 120, Anatomy Cap to 120 but reduces Macing Base and Cap to 0.
+•Inscription - Increases Inscription Cap to 120.
+•Chemical Science - Add 30 to Alchemy and add Mortal and Pestle to Backpack.
+•Elemental Resistance - Resistance (Explained Above)
+•Furniture Staining - Adds Furniture Dye Tub to Backpack.
+•Leather Dying - Adds Leather Dye Tub to Backpack
+•Enameling - Add Armor Dye Tub 
+
+
+All Dye Tubs have been Included which is required for this release.
+
+I will be working on it when I can.
+
+Limited Support will be available.
+
+To show what power this system can provide, here is an example of what I call an `Active` Feat as it requires player interaction to use.

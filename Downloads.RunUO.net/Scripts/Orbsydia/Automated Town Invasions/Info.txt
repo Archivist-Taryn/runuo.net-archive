@@ -1,0 +1,31 @@
+Moving this to my new home, CraftUO.
+
+ This is the first plug and play town invasion system you will ever see released publicly. Simply drop it in your customs and restart your shard, and the entire system is all set.
+ 
+Credits
+ 
+- Milt wrote an unfinished version of the event system that I used as a small base. I completed this portion and wrote this entire event myself. It would be unfair to not give him credit for the idea and the base of this awesome system that I helped come about.
+ 
+How It Works
+ Town invasions are set currently to happen to a random town every 12 hours. When a town is invaded, the guards "run away" (get disabled automatically) and the entire town gets overrun with spawn. Each town supported has it's own creature/boss template that I based mostly on old OSI events from back in the day. I know, you're excited already, because it is awesome.
+ 
+Once ALL of the spawn is killed, a champion arises as a boss. Guards will not return to the town until the champion is killed, and it also gets announced.
+ 
+The Neighborhood Watch
+ These guys do not walk around, and are kind of like a town crier. Place them in every town near a bank preferably. When an invasion happens, they will start yelling which town is being invaded and that their citizens need help. Once the invasion is fought off, they will say everything is fine again. Afterall, we don't want our players just wandering to find our event now do we?
+ 
+Invaded Towns
+ - Britain - This town is currently commented out because of it's popularity with starting areas, you can uncomment it in TownInvasion.cs.
+ - Moonglow
+ - Minoc
+ - Delucia
+ - Ocllo
+ - Skara Brae
+ - Yew
+ 
+A single town is invaded at random to keep players on their toes.
+ 
+Some Side Notes
+ I have always hated some of the small things people leave out of awesome systems like this. What I have done for you is assured that no current invasion will be left out by the timers, I've cleaned up all of the mess. Even if you restart during an invasion, the spawn and entire system get reset automatically for you.
+ 
+Enjoy the invasions, I feel the UO community has needed this for a long, long time. I am very happy to provide you with it. 

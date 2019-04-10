@@ -1,0 +1,11 @@
+http://orbsydia.com/forum/showthread.php/584-Xanthos-Auction-System
+
+
+This is Xanthos' auction system from RunUO fora ( http://www.runuo.com/community/threa...-system.73486/ ). I am not a scripter by any means but I finally completed this. A few edits were required to make it work with Orb svn. My son has also made some edits and wanted me to post this but we take zero credit for any of this. Long live Orb. Long live UO.
+
+Note that in the auction zip is Ultima.dll's folder containing ultima.dll and ultima.dll.bak
+
+Put the smaller ultima.dll into your server root. Backup your existing ultima.dll. You must use the smaller ultima.dll in your server root folder for this auction system to function. The ultima.dll.bak is much larger and is a backup of the stock dll from Orb svn in case you overwrite yours. I do not know if there are any negative results from switching to an older much smaller ultima.dll but my server boots and seems to work fine, and I can still connect with uoa to boot. Remove the ultima.dll folder from the auction folder and copy the auction folder into your /Scripts/Customs.
+
+Included is the Xanthos shrink zip which is required for the above to function. Copy the shrink folder into your /Scripts/Customs
+Also included is the Xanthos utilites zip which is required for the above to function. Copy the utilities folder into your /Scripts/Customs

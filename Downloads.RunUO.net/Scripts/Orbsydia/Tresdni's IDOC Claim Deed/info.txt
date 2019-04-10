@@ -1,0 +1,32 @@
+http://orbsydia.com/forum/showthread.php/864-Tresdni-s-IDOC-Claim-Deed
+
+
+This deed makes for a great donation gift or other nice shop item. It requires one small core mod.
+
+What It Does
+
+The player double clicks the deed and targets the house sign of a house that is in danger of collapsing (IDOC). It automatically transfers full ownership of the home and it's contents to the player.
+
+Features
+
+- Only works if the home is IDOC.
+- Only works from the players pack.
+- Checks if the player can own another home. This also supports the multiple houses per account mod, because it uses the method HasAccountHouse from BaseHouse.cs.
+- Clears the friends, bans, and co-owners.
+- Changes the locks if pre-aos, and gives the player new keys.
+- Instantly refreshes the home. 
+
+Simple Core Mod
+
+In Scripts/Multis/HouseSign.cs around line 13:
+
+Change
+
+
+Code:
+private BaseHouse m_Owner;
+
+to
+
+Code:
+public BaseHouse m_Owner;

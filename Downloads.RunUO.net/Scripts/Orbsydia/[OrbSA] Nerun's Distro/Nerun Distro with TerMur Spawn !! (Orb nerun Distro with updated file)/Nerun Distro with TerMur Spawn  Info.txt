@@ -1,0 +1,12 @@
+Hi guys i have updated Orb Nerun Distro with adding of TerMur Spawn, more user of Orb need this file and i have share with all community my modification of this utility
+
+I have activated TerMur in Nerun Distro and i have created spawn of all Region searching in UOStratic wich monster spawning in each location
+
+The archive contain "Nerun Distro" folder and "Data" folder with all moddification
+
+- Nerun Distro Folder must be move in Custom folder overwritting the existing Folder (DONT DELETE OLD FILE ! only overwrite this)
+
+- Data Folder must be place in Runuo Folder overwritting the old file with this new version (DONT DELETE OLD FILE ! only overwrite this)
+
+
+Active Runuo and spawn all location of TerMur and re-create all World, save and restart

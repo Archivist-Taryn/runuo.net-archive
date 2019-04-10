@@ -1,0 +1,8 @@
+http://orbsydia.com/forum/showthread.php/870-Item-Tag-Verification-Community-Script
+
+This is just a simple way to set certain items to be used by specific individuals or groups of people who have the same tags on their accounts; ie. guilds, contributors etc.
+
+1 Distro Edit... PlayerMobile.cs
+I included a fresh copy of the PlayerMobile.cs with this 1 modification so its easy to find. Read the Readme file in the package for further 
+instruction. This was an idea I had a few years back and I'm just bringing it to life again with some new ideas.
+

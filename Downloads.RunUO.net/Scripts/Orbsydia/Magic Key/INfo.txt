@@ -1,0 +1,36 @@
+Another script i found and edited to get working with ForkUo.
+
+ A magical key that unlocks and untraps chests.
+ This has been tested, to the BEST of my and others'
+ abilities, with player houses and secure chests.
+ While I cannot guarantee 100% safety, I can say that
+ in the time that I have had this script available
+ to the RunUO community, there have not been any
+ reports whatsoever of problems with housing or
+ secure chests.
+
+
+ This will, however, quite handily unlock and untrap
+ chests in dungeons, player-crafted locked and trapped
+ containers that are stolen or looted, etc.
+
+
+ The keys are single-use, and will disappear after
+ being used once.
+
+
+ MODIFY - Scripts\Items\Misc\Keys.Cs to the following:
+
+ public enum KeyType
+ {
+ Copper = 0x100E,
+ Gold = 0x100F,
+ Iron = 0x1010,
+ Rusty = 0x1013, // remember comma
+ Magic = 0x1012 // add this
+ }
+
+
+ And a friendly reminder: If you sell it in stores,
+ remember to take into account the gold gained from locked and
+ trapped treasure chests on your shard. 

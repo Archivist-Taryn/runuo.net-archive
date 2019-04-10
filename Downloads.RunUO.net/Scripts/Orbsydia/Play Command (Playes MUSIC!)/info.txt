@@ -1,0 +1,169 @@
+http://orbsydia.com/forum/showthread.php/555-Play-Command
+
+
+Want to start a band but think it's a little pointless since all the other musicians are playing the same thing as you? Well, that's not a problem here. Here, using the [play command, you can play singular notes and pauses to compose your own music.
+
+Usage: [play note|pause [note|pause] ...
+
+There are 25 possible note values:
+
+* cl (low C)
+* csl (low C#)
+* d (D)
+* ds (D#)
+* e (E)
+* f (F)
+* fs (F#)
+* g (G)
+* gs (G#)
+* a (A)
+* as (A#)
+* b (B)
+* c (middle C)
+* cs (C#)
+* dh (high D)
+* dsh (high D#)
+* eh (high E)
+* fh (high F)
+* fsh (high F#)
+* gh (high G)
+* gsh (high G#)
+* ah (high A)
+* ash (high A#)
+* bh (high B)
+* ch (high C)
+
+Some sample tunes:
+
+Twinkle Twinkle Little Star:
+(Razor: Add a 2sec pause after the third line, and a 4sec pause before the last line.)
+[play cl 0.4 cl 0.4 g 0.4 g 0.4 a 0.4 a 0.4 g 0.8
+[play f 0.4 f 0.4 e 0.4 e 0.4 d 0.4 d 0.4 cl 0.8
+[play g 0.4 g 0.4 f 0.4 f 0.4 e 0.4 e 0.4 d 0.8
+[play g 0.4 g 0.4 f 0.4 f 0.4 e 0.4 e 0.4 d 0.8
+[play cl 0.4 cl 0.4 g 0.4 g 0.4 a 0.4 a 0.4 g 0.8
+[play f 0.4 f 0.4 e 0.4 e 0.4 d 0.4 d 0.4 cl 0.8
+
+Frere Jacques:
+(Razor: Add a 1sec pause between the 2nd and 3rd lines.)
+[play c 0.3 dh 0.3 eh 0.3 c 0.4 c 0.3 dh 0.3 eh 0.3 c 0.3
+[play eh 0.3 fh 0.3 gh 1.0 eh 0.3 fh 0.3 gh 1.0 gh 0.1 ah 0.1 gh 0.1 fh 0.1 eh 0.3 c 0.3
+[play gh 0.1 ah 0.1 gh 0.1 fh 0.1 eh 0.3 c 0.4 c 0.3 g 0.3 c 1.0 c 0.3 g 0.3 c
+
+Pop Goes the Weasel:
+[play d 0.2 g 0.6 g 0.2 a 0.6 a 0.2 b 0.2 dh 0.2 b 0.2 g 0.6
+[play d 0.2 g 0.6 g 0.2 a 0.6 c 0.2 b 0.8 g 0.6
+[play d 0.2 g 0.6 g 0.2 a 0.6 a 0.2 b 0.2 dh 0.2 b 0.2 g 0.8
+[play eh 0.8 a 0.4 c 0.2 b 0.8 g
+
+Valid pause values are 0.1-1.0.
+
+You must have at least 80 Musicianship. If you are not GM in Music, each note has a proportional chance of being wrong. (For example, if you have 90 Music, there is a 10% chance that each note will be wrong.)
+
+If you have not already selected an instrument (for instance, by using Peacemaking), you will be asked to target an instrument. The selected instrument must be a stringed instruments. Drums and tambourines will not work.
+
+
+•If you create a long melody and want to stop it before it ends, use [StopMusic.
+
+
+•You can use [FilterMusic to control whether you can hear tunes played using [play. [FilterMusic is a toggle, so you can easily turn music off and on.
+
+
+•When you start playing, you will now emote *plays a tune*.
+
+
+•If you play repeated notes with no pause in between, you will now get a warning telling you that some notes may not play.
+
+
+•Because of the way the client plays sound files, if you play the same note consecutively (e.g., "[play c c"), you will only hear the first one. To prevent this, use at least a 0.3 pause (0.4 may be required, depending on lag) between the notes.
+
+
+•The play buffer is limited. If you use multiple play commands and create too many notes/pauses within too short a time, you will get a message that you must rest your fingers. To prevent this, when using a Razor macro to play multiple lines, include a pause of a few seconds between commands.
+
+
+•In general, lag causes rhythms to be unpredictable. Slower tunes (i.e, longer pauses) are less affected by lag.
+
+
+The Zip file contains the info required to install, this will require you to edit and compile a new core.
+
+---------------------------------------------------------
+(Playermobile.cs)Place above public override bool CanBeBeneficial Method:
+---------------------------------------------------------
+
+Code:
+public override void PlaySound( int soundID )
+		{
+			PlaySound( soundID, false );
+		}
+
+		// Overrided PlaySound to control playing of music
+		public void PlaySound( int soundID, bool IsNote )
+		{
+			if ( soundID == -1 )
+				return;
+
+			if ( Map != null )
+			{
+				Packet p = null;
+
+				IPooledEnumerable eable = Map.GetClientsInRange( Location );
+
+				foreach ( NetState state in eable )
+				{
+					if ( state.Mobile.CanSee( this ) )
+					{
+						// If the mobile is a player who has toggled FilterMusic on, don't play.
+						if ( IsNote && state.Mobile is PlayerMobile
+							&& ( (PlayerMobile)state.Mobile).FilterMusic )
+							continue;
+					
+						if (p == null)
+							p = Packet.Acquire(new PlaySound(soundID, this));
+
+						state.Send( p );
+					}
+				}
+
+				Packet.Release(p);
+
+				eable.Free();
+			}
+		}------------------------------------------- 
+(Playermobile.cs)Place after private class CountAndTimeStamp:
+-------------------------------------------
+
+Code:
+private Queue m_PlayList = null;
+		public Queue PlayList
+		{
+			get { return m_PlayList; }
+			set { m_PlayList = value; }
+		}
+
+		private bool m_FilterMusic = false;
+
+		public bool FilterMusic
+		{
+			get { return m_FilterMusic; }
+			set { m_FilterMusic = value; }
+		}
+
+		private bool m_Playing = false;
+
+		public bool Playing
+		{
+			get { return m_Playing; }
+			set { m_Playing = value; }
+		}---------------------------------------------
+(Mobile.cs)Change:
+--------------------------------------------
+
+Code:
+public void PlaySound( int soundID )To:
+
+Code:
+public virtual void PlaySound( int soundID )Then:
+Compile a new core.
+------------------------------------------------------------- 
+Drag drop Music.cs and Play.cs to commands folder or wherever.
+-------------------------------------------------------------

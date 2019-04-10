@@ -1,0 +1,23 @@
+Hi guys, Im here to post a script for enable Minotaur Champion on Labyrinth Dungeon.
+
+I use a script made by "ABCGizmo on RunUO Forum" and i apply to this some modification, to create 3 spawn of different type of Minotaur (Minotaur - Minotaur Scout - Minotaur Captain), controlled by Champions Kills Number.
+
+Every type of Minotaur increment Champion Kills by 1;
+
+Beetween every Spawn Change, 4 Message was sent to all player. ( see UOGuide for information about Champion Message)
+
+
+If Champion Kills is > 20, spawn various Minotaur.
+
+If Champion Kills is > 60, spawn various Minotaur Scout and Minotaur.
+
+If Champion Kills is > 120, spawn various Minotaur Captain, Minotaur and Minotaur Scout.
+
+If Champion Kills is => 200, spawn various Meraktus.
+
+After "Meraktus Death", spawn was reset to 0 and stay Deactive until Champion Kills is < 20.
+
+
+After spawn initialized a Timer was active to control if Champion was continue and if nothing player was found on Dungeon, the "Champion Kills" was Reset.
+
+I add the instruction to Activate this Champion in Zip File.

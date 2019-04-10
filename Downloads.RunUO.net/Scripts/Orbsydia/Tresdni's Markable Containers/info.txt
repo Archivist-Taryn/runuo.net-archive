@@ -1,0 +1,34 @@
+http://orbsydia.com/forum/showthread.php/890-Tresdni-s-Markable-Containers
+
+
+What They Do
+
+These containers can be marked like a recall rune. When a rune is dropped into the container, it marks it automatically for the location the container was marked. It also automatically sets the runes description the same as the container's description.
+
+This makes a great house addon so guildies can mark runes all at once with ease. You can make multiples on the fly in your own home!
+
+Features
+
+- Does all of the same checks as a recall rune when marked.
+- Can be marked inside a home, just like a recall rune as well. It will set the location the same as a house rune.
+- Changes color based on the map the rune was marked, just like a recall rune.
+- Single click the container and click rename to change it's description. This is what runes will be named when dropped in.
+
+Installation
+
+1. Drop the included Mark.cs and overwrite your old one.
+2. Drop MarkableContainer.cs in your customs folder (or anywhere else in the scripts folder you choose).
+3. Restart and enjoy.
+
+To Make Them Craftable (Optional)
+
+Add this to your DefCarpentry:
+
+
+Code:
+
+index = AddCraft( typeof( MarkableContainer ), 1044294, "markable container", 95.0, 100.0, typeof( Log ), 1044041, 250, 1044351 );
+AddRes( index, typeof( MarkScroll ), "Mark Scroll", 20, 1044253 );
+ForceNonExceptional( index );
+
+*I put them after the engravers on our project.

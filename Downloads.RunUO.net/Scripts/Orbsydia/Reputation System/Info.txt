@@ -1,0 +1,123 @@
+This is my first contribution to this community. This is an overhaul of the system I first posted for runuo. Hope some of you guys can incorporate this into your shards. Enjoy. 
+
+Reputation System
+ Version 3.0
+ Designed for ForkUO 0.2
+ 
+Authored by Dougan Ironfist
+ Last Updated on 1/30/2013
+ 
+Using this set of scripts will allow shard administrators the ability to implement reputation groups to their servers. These scripts were modeled after the reputation systems used by WoW and other MMORPGs on the market today.
+ 
+This system comes complete with an example reputation group called the Minoc Blacksmith Association which gives out crafting quests and hunting quests. The example scripts are fully documented to help you create your own reputation groups with their own specific quests, rewards and vendors. Using this system you can create as many reputation groups as you could possible want and give your players something new to work towards and entertain themselves.
+ 
+---------------------------------------------------------------------------------------------------------------------------
+ 
+WARNING:
+ Shard administrators that are using an earlier version of this Reputation System that was designed for RunUO. This system is a separate system. Although it was rebuilt using the original project, this version is vastly superior in it's abilities. This system was created using a different namespace so the two systems will not interfere with each other. The structure of the attachment is the same, so you should be able to move the data from the old attachment into the new attachment without breaking your shard if you are careful.
+ 
+---------------------------------------------------------------------------------------------------------------------------
+ 
+What this system provides:
+ 
+·A Reputation Logbook that can be purchased for a few gold from any reputation vendor. The player can double click on the book to display the reputation of the groups he/she has encountered so far.
+
+i.It is worth noting that the Logbook is merely used as a tool to display the Reputation Gump. The Logbook is not used to track reputation and the player will not be affected if he/she throws away the Logbook.
+
+·Customizable reputation quest givers that can offer a wide variety of quests, including the custom crafting quest that is included in the core system.
+
+·Customizable reputation vendors that allow the player to see or purchase items that they have the reputation to be able to purchase. The player will not be able to see items that the vendor has for sale that require a higher reputation than the player has earned.
+
+·A unique way to allow players to obtain custom items that can only be obtained through reputation vendors.
+
+·A reputation system that includes multiple levels of reputation that include:
+
+·Hated
+
+·Disliked
+
+·Wary (New with Version 3.0)
+
+·Neutral
+
+·Friendly
+
+·Well Known
+
+·Trusted
+
+·Member
+
+·A full example reputation group that is fully commented to aid you in the design of your own reputation groups.
+
+·Custom title scrolls that can grant your players with titles for your reputation groups. These scrolls can be placed on your reputation vendors.
+
+·A [RepSpawn command that allows you to use XmlSpawner to populate your reputation spawns. You can issue the [RepSpawn comand by itself to respawn all reputation groups, or you can use [RepSpawn <abbr> and specify the abbreviation for the specific group you want to spawn.
+ 
+How players can gain reputation:
+ You can setup a reputation system to provide reputation in many different ways. This system allows you to setup as simple a system as you want, or as complex. The example reputation group provides multiple examples of how a player can gain reputation.
+ 
+Example 1: You can setup a system with no quest giver at all. The player can gain reputation simply by killing the monsters that you specify.
+ 
+Example 2: You can setup a system where the player gains reputation by completing crafting quests, hunting quests, a combination of the two or any other quest you devise.
+ 
+Example 3: You can setup a complex system where the player can gain up to Friendly reputation by killing lizardmen. They can gain up to Trusted reputation by completing quests. However, the only way to gain Member reputation is by killing dragons.
+ 
+These are just a few examples of how you can allow your players to earn reputation, but the only true limiting factor is your imagination.
+ 
+Customization of Core System:
+ The only customization of the core system that would need to happen is if you want to have the ability allow players to gain reputation by killing monsters. If you want to run this system strictly using quests, then no modifications are needed.
+ 
+To modify the system to allow reputation gain by killing monsters, open the BaseCreature.cs script and locate the following code.
+ 
+
+
+
+Code:
+public virtual void OnKilledBy( Mobile mob )
+{
+     if ( m_Paragon && Paragon.CheckArtifactChance( mob, this ) )
+          Paragon.GiveArtifactTo( mob );
+     .
+     .
+     .
+} 
+Now change the code to:
+ 
+
+
+
+Code:
+public virtual void OnKilledBy( Mobile mob )
+{
+     if (this.m_Paragon && XmlParagon.CheckArtifactChance(mob, this))
+          XmlParagon.GiveArtifactTo(mob, this);
+ 
+     if (mob is PlayerMobile)
+          Custom.ReputationSystem.ReputationSystem.OnKilledByEvent(this, ((PlayerMobile)mob));
+     .
+     .
+     .
+} 
+Installation of the Core Reputation System:
+ Simply unzip the archive and drop the Reputation folder anywhere inside your Scripts folder.
+ 
+Installing and Setting Up the Example Reputation Group:
+ 
+·Install the Core Reputation System as per the instructions above. The Reputation folder contains all of the example scripts.
+
+·From the archive, drop the contents of the Spawns folder into your server's Spawns folder.
+
+·Start your server and issue the [RepSpawn command to generate the spawns using XmlSpawner.
+
+·The Minoc Blacksmith Association is now in operation in both Trammel and Felucca.
+
+·You will find the following new mobiles in Minoc now.
+
+·South of the bank you will find the group's quartermaster willing to sell you rewards that you have earned.
+
+·Nearby the quartermaster is the group's taskmaster that is busy issuing crafting quests for various blacksmithing goods. Warning, you must actually craft these items. Buying the items from the store will do you no good. The taskmaster is no fool.
+
+·In northern Minoc, you will find the group's foreman on the bridge leading to the mines. He is in need of assistance with eliminating some pesky elementals that are infesting the mine.
+
+·All around the Minoc mine you will find lots of Lesser Elementals. Unlike their bigger brothers, these guys are more an annoyance and are quite content with ignoring you unless you attack them.

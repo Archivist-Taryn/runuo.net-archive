@@ -1,0 +1,9 @@
+http://orbsydia.com/forum/showthread.php/89-Lilarcor-(Tribute-to-Baldurs-Gate-2)
+
+
+
+
+Hiya, another simple script here. Just a weapon script with a backstory book on how Lilarcor came to be. For those that never played Baldurs Gate, Lilarcor was an annoying sword that had a moronic adventurer stuck inside. This speaks randomly, and makes noises upon missing to mock you. Has a 1% chance of killing its target outright with restriction against basepeerless, harrower and basechampion.
+
+I've been trying to come up with a way of actually making the item itself speak but haven't come up with the correct method. Regardless play around with it and have fun.
+

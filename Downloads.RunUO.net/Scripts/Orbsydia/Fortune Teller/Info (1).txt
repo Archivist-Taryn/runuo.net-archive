@@ -1,0 +1,36 @@
+Based off of the original Ultima series virtue questions.
+ I have updated the script to operate closer to the way the original Ultima virtue
+ questions worked. The first four questions are a random mix of the 8 virtues,
+ compared two at a time. Question five compares the player's choices from
+ questions one and two, question six compares the player's choices from questions
+ three and four, and the last question compares the player's choices from
+ questions five and six.
+
+ Since I was using these scripts to set the player's initial statistics, this
+ method works better for me. :> And keeps the stats from being too lopsided.
+
+ One of the drawbacks to this system is that the original 8 virtues have no place
+ for neromancers, true rogues (rather than bards), or any of the professions that
+ have arisen from Ultima Online's skills like treasure hunter, or the upcoming
+ Ninja and Samurai (bet that's gonna date this document. ;> =) So I've designed
+ this script to give a "recommended" profession and let the character go on their
+ way. The intent is for the player starting area to have a gypsy and a selection
+ of character gates that the player can choose a class fromThings you should know:
+
+ The scripts also resets all the character's statistics at the beginning if the
+ player accepts the telling. These changes can be easily commented out, and start
+ at line 108 in VirtueTellerMainGump.cs
+
+ Each question answered will give the character a small stat bonus, 6 points spread
+ across one or more statistics. This method is easy to change, and can be totally
+ disabled by uncommenting one line (a "return" before any stat changes take place)
+ or the values can be adjusted. The method begins at line 437 in VirtueQuestionGump.cs
+
+ Usage:
+
+ You can use the "VirtueFortuneTeller" or the "VirtueTarot" cards, or a combination
+ of both along with appropriate decorations. The initial gump is called when either
+ the cards or the fortune teller are double-clicked on.
+
+ The fortune teller may be spawned or simply placed, she's blessed by default and
+ will not move from where she's created. 

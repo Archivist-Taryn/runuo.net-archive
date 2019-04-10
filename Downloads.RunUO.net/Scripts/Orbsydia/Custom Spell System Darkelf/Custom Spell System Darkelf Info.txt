@@ -1,0 +1,5 @@
+No credits goes to me.. i just found the script on the old orbsydia.org and posting here to share.
+
+The spells where an item is summoned let my serv crash on item delete.
+
+if i'll find a fix i'll let u know.
